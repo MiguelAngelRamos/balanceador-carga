@@ -20,11 +20,7 @@ public interface ProductRepository {
   @GetMapping(path="/product-msv/products")
   public List<Product> getAllProducts();
 
-  @PostMapping
+  @PostMapping(path="/product-msv/products")
   public Product createProduct(@RequestBody Product product);
-//  @PostMapping(path="/companies-crud/company")
-//  Optional<Company> postByName(@RequestBody Company company);
-//
-//  @DeleteMapping(path="/companies-crud/company/{name}")
-//  void deleteByName(@PathVariable String name);
+
 }
